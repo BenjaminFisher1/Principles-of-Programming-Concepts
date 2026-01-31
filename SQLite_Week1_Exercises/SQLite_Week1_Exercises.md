@@ -29,7 +29,29 @@ Next, we need to turn on CSV mode and say that the CSV file contains a header. A
 
 ![[Pasted image 20260131141628.png]]
 
-Now, we'll import our CSV file into our new table, and verify it properly imported by displaying the first few rows. 
+Now, we'll import our CSV file into our new table, and verify it properly imported by displaying the first few rows.
+
+![[Pasted image 20260131142212.png]]
+
+Perfect, we properly read the CSV file into the table. Let's remove that pesky header. I'll run a simple `DELETE` statement to remove any rows where the lastName field is LAST NAME (which is only the header). After that, I'll rerun the `SELECT` statement to show the first five rows, and we can see the header is gone.
+
+![[Pasted image 20260131142546.png]]
+
+The next step in the TODO is to simply list the first 10 table entries. I'll just slighty alter the `SELECT` statement from before to limit 10 rows instead of 5.
+
+![[Pasted image 20260131142836.png]]
+
+As expected, the first 10 rows are displayed. 
+
+Next, we are instructed to save the data to a database file called `bmiInfo.db`, and then exit the sqlite3 session. After exiting, I'll double check that `bmiInfo.db` properly saved:
+
+![[Pasted image 20260131143127.png]]
+
+The database file is there, as expected.
+
+Next, we are instructed 
+
+
 ## Research
 
 For research, I've been assigned to read the following: 
