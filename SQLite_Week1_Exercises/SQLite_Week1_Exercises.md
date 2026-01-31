@@ -17,17 +17,19 @@ Next, I'll enter my container, and verify that the file copied in properly.
 
 Awesome, the CSV is there, and we can continue. Let's take a look at the contents. 
 
-contents here
+![[Pasted image 20260131141040.png]]
+
+We can see the CSV has 4 Columns, `LAST NAME`, `FIRST NAME`, `HEIGHT(in.)`, and `WEIGHT`(lbs.). We also see the CSV contains a header, which we'll have to remove once we migrate it to a table.
 
 The next step is to open an sqlite3 session.
 
 ![[Pasted image 20260131140249.png]]
 
-Next, we need to turn on CSV mode and say that the CSV file contains a header.
+Next, we need to turn on CSV mode and say that the CSV file contains a header. After that, we'll create a table called `bmi_info` matching the structure of the csv.
 
+![[Pasted image 20260131141628.png]]
 
-
-
+Now, we'll import our CSV file into our new table, and verify it properly imported by displaying the first few rows. 
 ## Research
 
 For research, I've been assigned to read the following: 
