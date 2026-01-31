@@ -11,6 +11,22 @@ First, I need to copy the CSV file into my Ubuntu container with SQLite3 install
 
 ![[Pasted image 20260131135612.png]]
 
+Next, I'll enter my container, and verify that the file copied in properly.
+
+![[Pasted image 20260131140016.png]]
+
+Awesome, the CSV is there, and we can continue. Let's take a look at the contents. 
+
+contents here
+
+The next step is to open an sqlite3 session.
+
+![[Pasted image 20260131140249.png]]
+
+Next, we need to turn on CSV mode and say that the CSV file contains a header.
+
+
+
 
 ## Research
 
