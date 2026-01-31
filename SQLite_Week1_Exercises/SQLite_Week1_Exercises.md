@@ -25,7 +25,7 @@ The next step is to open an sqlite3 session.
 
 ![[Pasted image 20260131140249.png]]
 
-Next, we need to turn on CSV mode and say that the CSV file contains a header. After that, we'll create a table called `bmi_info` matching the structure of the csv.
+Next, we need to turn on CSV mode and say we want the header displayed while outputting data. After that, we'll create a table called `bmi_info` matching the structure of the csv.
 
 ![[Pasted image 20260131141628.png]]
 
@@ -49,7 +49,27 @@ Next, we are instructed to save the data to a database file called `bmiInfo.db`,
 
 The database file is there, as expected.
 
-Next, we are instructed 
+Next, we are instructed to find and examine the .sqlite_history file. 
+
+![[Pasted image 20260131143750.png]]
+
+We can see everything that I entered during the previous assignment, but not anything from the most recent session, which is because I exited the sqlite3 session using ctrl+C instead of .exit. Oops!
+
+It's interesting that we can see all of the statements and commands I inputted, but none of the results of those statements (Like the `SELECT` not showing results).
+
+Next, we have to start another sqlite3 session and load the `bmiInfo.db` file that we saved previously. After loading, we run `.schema`. 
+
+![[Pasted image 20260131145441.png]]
+
+`.schema` shows the SQL `CREATE` statements that define the structure of our table.
+
+Finally, we are to list the first 10 table entries again.
+
+![[Pasted image 20260131145801.png]]
+
+Because I didn't specify `.mode csv`, we're seeing | separators instead of commas, and no `.header on` means the header isn't displayed when outputting. 
+
+
 
 
 ## Research
