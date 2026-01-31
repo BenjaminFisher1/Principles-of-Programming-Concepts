@@ -67,9 +67,10 @@ Finally, we are to list the first 10 table entries again.
 
 ![[Pasted image 20260131145801.png]]
 
-Because I didn't specify `.mode csv`, we're seeing | separators instead of commas, and no `.header on` means the header isn't displayed when outputting. 
+Because I didn't specify `.mode csv`, we're seeing | separators instead of commas, and no `.header on` means the header isn't displayed when outputting. Our data is the same. 
 
 
+In this assignment, we experimented with creating a sqlite3 database from a CSV file, saving databases to .db files, and retrieving existing databases from .db files. 
 
 
 ## Research
