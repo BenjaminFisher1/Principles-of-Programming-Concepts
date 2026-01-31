@@ -23,21 +23,21 @@ From these readings, I'll pull key phrases/words and definitions.
 
 **Data Bank:** Broader term structured repository of data, term contains Relational Data Base
 
-**Data Base:** 
+**Data Base:** Organized collection of structured data. 
 
-**Data Structure:**
+**Data Structure:** Format for organizing and storing data.
 
-**Data Organization:**
+**Data Organization:** The process of collecting, structuring, and storing data.
 
-**Hierarchies of Data:**
+**Hierarchies of Data:** Organizational Structure of data elements arranged in a hierarchical order or tree. Parent/child setup.
 
-**Networks of Data:**
+**Networks of Data:** More flexible way to organize data, where hierarchical is stricter. Allows for individual data to have more than one parent/child. 
 
-**Relations:**
+**Relations:** Description of connections/interactions between SQL tables.
 
-**Derivability:**
+**Derivability:** Certain data, tables, etc. can be derived from other data, rather than being physically stored in the database.
 
-**Redundancy:**
+**Redundancy:** Storing data in multiple places. Can be bad (duplicate entries) or good (backups)
 
 **Consistency:**
 
