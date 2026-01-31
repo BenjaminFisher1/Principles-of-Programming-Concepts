@@ -14,17 +14,48 @@ Association for Computing Machinery:*, pages 249-264
 
 From these readings, I'll pull key phrases/words and definitions.
 
-
 ### A Relational Model of Data for Large Shared Data Banks 
 
-lorem
+**Data Bank:** Broader term structured repository of data, term contains Relational Data Base
+
+**Data Base:** 
+
+**Data Structure:**
+
+**Data Organization:**
+
+**Hierarchies of Data:**
+
+**Networks of Data:**
+
+**Relations:**
+
+**Derivability:**
+
+**Redundancy:**
+
+**Consistency:**
+
+**Composition:**
+
+**Join:**
+
+**Retrieval Language:**
+
+**Predicate Calculus:**
+
+**Security:**
+
+**Data Integrity:**
+
+
 
 ### *SEQUEL: A Structured English Query Language
 
 **Query Languages:** A language used to fetch/modify data from a database
 
-**DBMS (Data Base Management Systems):** Software 
+**DBMS (Data Base Management Systems):** Software used to create and manipulate databases.
 
-**Information Retrieval:**
+**Information Retrieval:** Methods to pull data from database columns, such as utilizing regex.
 
-**Data Manipulation Languages**
+**Data Manipulation Languages:** The subset of SQL that deals with altering data in a database *without* changing database structure.
