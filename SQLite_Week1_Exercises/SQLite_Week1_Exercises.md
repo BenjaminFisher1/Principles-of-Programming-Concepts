@@ -2,7 +2,7 @@
 
 ## TODO 
 
-The first item on our todo list for this assignment is to Install Sqlite3 on my machine. I already completed this, and detailed my setup, in the [previous assignment](https://github.com/BenjaminFisher1/Principles-of-Programming-Concepts/blob/main/SQLite_Session.pdf).
+The first item on our todo list for this assignment is to Install Sqlite3 on my machine. I already completed this, and detailed my setup, in the [previous assignment](https://github.com/BenjaminFisher1/Principles-of-Programming-Concepts/blob/main/SQLite_Session/SQLite_Session.pdf).
 
 Next, we are given a CSV file, titled `nameWithHeightWeight.csv`. Our goal is to *"load it into a sqlite table,*
 *perform some queries and save the table in a file-based database"*.
