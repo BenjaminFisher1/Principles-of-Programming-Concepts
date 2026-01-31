@@ -39,19 +39,19 @@ From these readings, I'll pull key phrases/words and definitions.
 
 **Redundancy:** Storing data in multiple places. Can be bad (duplicate entries) or good (backups)
 
-**Consistency:**
+**Consistency:** Ensuring all changes to a database follow the rules and constraints specified. 
 
-**Composition:**
+**Composition:** A strong dependency between two tables (such as a parent/child).
 
-**Join:**
+**JOIN:** Used to combine rows from multiple tables based off a related column.
 
-**Retrieval Language:**
+**Retrieval Language:** Fetch data from a database without modifying data (SELECT)
 
-**Predicate Calculus:**
+**Predicate Calculus:** Defining and filtering data based on logical conditions. Specifies WHAT vs HOW to retrieve.
 
-**Security:**
+**Security:** Protect a database from unauthorized access or destruction.
 
-**Data Integrity:**
+**Data Integrity:** Ensuring the data in a database maintains it's intended state.
 
 
 
