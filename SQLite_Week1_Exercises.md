@@ -1,4 +1,9 @@
-*This assignment is split into two parts: **RESEARCH** and **TODO**.*
+*This assignment is split into two parts: **RESEARCH** and **TODO**. I'm going to place the research at the end of this document, because I'll probably refer back to the TODO section more frequently.*
+
+## TODO 
+lorem
+
+
 ## Research
 
 For research, I've been assigned to read the following: 
