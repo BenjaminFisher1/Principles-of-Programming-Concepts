@@ -1,3 +1,4 @@
+*Introductory exercises with interacting with MariaDB.*
 ### Setup
 Again, I'm completing this assignment on the Project Bluefin O.S. I'm going to create a new Ubuntu container for this assignment.
 
@@ -52,7 +53,7 @@ lname varchar(100), fname varchar(100), town varchar(100), state varchar(20)
 
 ![[Pasted image 20260203200025.png]]
 
-This container shares the home directory of my host machine, so I don't have to use podman to copy the CSV in. Now, we're tasked to read in the file, which contains the last name, first name, town, and state of Vietnam Veterans.
+This container shares the home directory of my host machine, so I don't have to use podman to copy the CSV in. Now, we're tasked to read in the file, which contains the last name, first name, town, and state of Vietnam Veterans who were KIA.
 
 ![[Pasted image 20260203220349.png]]
 
@@ -61,3 +62,28 @@ Great! Looks like our CSV file properly read into our `vets` table.
 Now, we have a few SQL queries to run: 
 
 	(a) How many veterans are listed in the file?
+
+![[Pasted image 20260204103227.png]]
+
+By selecting all rows, we can see there are 58,253 rows, and since each row is a veteran, there are 58,253 veterans.
+
+	(b) How many of them are from DAYTON?
+
+![[Pasted image 20260204103959.png]]
+
+Looks like nobody in our CSV was from DAYTON. 
+
+	(c) List all veterans with last name 'HARRIS'
+
+![[Pasted image 20260204105752.png]]
+![[Pasted image 20260204111408.png]]
+
+I've trimmed out the middle of the output, but we can see that there are 136 veterans with the last name HARRIS in our table.
+
+
+### Conclusion
+This assignment involved installing MariaDB, creating a database and table to store Vietnam War veteran data, and importing records from a CSV file. After successfully loading the data, SQL queries were used to count total veterans, filter by location (DAYTON), and retrieve records by last name (HARRIS), demonstrating fundamental database management and query skills.
+
+
+
+
