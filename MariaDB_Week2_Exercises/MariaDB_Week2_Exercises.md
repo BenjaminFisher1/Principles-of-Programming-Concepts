@@ -69,9 +69,12 @@ By selecting all rows, we can see there are 58,253 rows, and since each row is a
 
 	(b) How many of them are from DAYTON?
 
-![[Pasted image 20260204103959.png]]
+Originally, my query was: `SELECT * FROM vets WHERE town = 'DAYTON';`. This returned 0, which is incorrect. I believe this error occured because the data in the CSV parsed whitespace along with some of the data. To run the query as intended, I instead run: `SELECT * FROM vets WHERE TRIM(town) = 'DAYTON';`, which matches the trimmed entries of the town column with `'DAYTON'`. This outputs correctly:
 
-Looks like nobody in our CSV was from DAYTON. 
+![[Pasted image 20260205113236.png]]
+![[Pasted image 20260205113251.png]]
+
+We can see 133 veterans are from a town called Dayton, but it is worth noting some are from Dayton, OH, while others are in KY, VA, or others.
 
 	(c) List all veterans with last name 'HARRIS'
 
