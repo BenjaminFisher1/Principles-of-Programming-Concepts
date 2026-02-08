@@ -25,3 +25,21 @@ I believe this should show five rows where the data in the state column is the s
 Interesting, we see only blank entries. From this output, I can come to the conclusion that the 83 rows where TRIM(state) = state are rows where there are no surrounding whitespaces on the entries. I reran the query without `LIMIT 5`, and all of the 83 rows are just empty data. 
 
 This means only empty rows have no surrounding white space on the state data.
+
+### 3. Delete empty rows
+
+The next step of the assignment confirms my conclusion: 
+	*The original CSV file had blank lines, so they were read in as empty rows. This is one thing you should  
+	be aware of when reading in CSV files.*
+
+Now, we're tasked to use a DELETE statement to clear out all the empty rows in the vets table.
+
+![[Pasted image 20260208122252.png]]
+
+Great! We can see our 83 empty rows have been deleted. 
+
+### 4. Trim whitespace
+
+Now that we've deleted any empty rows, we should properly trim all of our values in the state column to remove any extra whitespace.
+
+To do this, we'll use an `UPDATE` statement.
