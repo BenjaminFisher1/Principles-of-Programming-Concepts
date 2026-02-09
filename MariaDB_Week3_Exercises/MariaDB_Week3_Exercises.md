@@ -38,8 +38,37 @@ Now, we're tasked to use a DELETE statement to clear out all the empty rows in t
 
 Great! We can see our 83 empty rows have been deleted. 
 
-### 4. Trim whitespace
+### 4. Trim whitespace on states
 
 Now that we've deleted any empty rows, we should properly trim all of our values in the state column to remove any extra whitespace.
 
 To do this, we'll use an `UPDATE` statement.
+
+![[Pasted image 20260209112055.png]]![[Pasted image 20260209112131.png]]
+
+Looks good. Let's check our changes:
+
+![[Pasted image 20260209112252.png]]
+
+Now, the same query that proved we had extra whitespace on all of our state columns is showing us that we've properly trimmed all of the entries of the state column.
+
+### 5. Trim whitespace on everything else
+
+We've seen how to trim leading and trailing whitespace in one column, now let's do that for each other column. I'll alter the `UPDATE` sequence and re-run for each column.
+
+The following query will test to make sure each of the columns was properly trimmed. We'll also use a `LIKE` statement to display anybody whose first name starts with GUADALUPE, and is followed by anything else.
+![[Pasted image 20260209113445.png]]
+
+Looks good!
+
+### 6. Find towns starting with `LOS` 
+
+Our next task is to find how many towns in the data start with `LOS`.
+
+![[Pasted image 20260209114650.png]]
+
+Looks like there are 586 towns in the data that start with `LOS`.
+
+### 7. How many are `LOS ANGELES`? 
+
+To find out how many of the 586 towns are Los Angeles, I'll just run a `SELECT` statement to find where the town matches `LOS ANGELES` exactly, rather than LOS%. 
