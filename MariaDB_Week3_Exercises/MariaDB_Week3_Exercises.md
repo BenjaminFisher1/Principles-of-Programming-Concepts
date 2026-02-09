@@ -69,6 +69,14 @@ Our next task is to find how many towns in the data start with `LOS`.
 
 Looks like there are 586 towns in the data that start with `LOS`.
 
-### 7. How many are `LOS ANGELES`? 
+### 7. How many are NOT `LOS ANGELES`? 
 
 To find out how many of the 586 towns are Los Angeles, I'll just run a `SELECT` statement to find where the town matches `LOS ANGELES` exactly, rather than LOS%. 
+
+![[Pasted image 20260209123938.png]]
+
+We can see 538 of the towns starting with `LOS` are `LOS ANGELES`. 
+	586 - 538 = 48
+So, 48 towns are not from Los Angeles.
+
+### 8. FINISH 7 FIRST
