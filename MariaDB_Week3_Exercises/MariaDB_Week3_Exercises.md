@@ -77,6 +77,30 @@ To find out how many of the 586 towns are Los Angeles, I'll just run a `SELECT` 
 
 We can see 538 of the towns starting with `LOS` are `LOS ANGELES`. 
 	586 - 538 = 48
-So, 48 towns are not from Los Angeles.
+So, 48 towns are not Los Angeles, and 538 are Los Angeles.
 
-### 8. FINISH 7 FIRST
+### 8.  Los - Angeles: GROUP BY
+
+We want a count by state of people who are not from Los Angeles, but are from other towns starting with 'LOS'. 
+
+First, let's show a count by state of all people from town starting with 'LOS'. 
+
+![[Pasted image 20260209130449.png]]
+
+Now, let's exclude Los Angeles.
+
+![[Pasted image 20260209130612.png]]
+
+Perfect! 
+
+### 9. List of Vets from GUAM (GU) ordered by last name
+
+Now, we'll use an `ORDER BY` clause to order our output display:
+
+![[Pasted image 20260209131018.png]]
+
+I've limited the output to 5 rows, but we can see the rows are sorted by last name in ascending order.
+
+### 10. Create new table States
+
+
