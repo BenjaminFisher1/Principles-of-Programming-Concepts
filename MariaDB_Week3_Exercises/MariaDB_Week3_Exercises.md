@@ -103,4 +103,27 @@ I've limited the output to 5 rows, but we can see the rows are sorted by last na
 
 ### 10. Create new table States
 
+The last part of this assignment is to create a new table `states`, and read in a CSV file `States.csv` into the table. 
+
+When we preview the CVS file, we can see all of the data entries are stuck between quotation marks:
+![[Pasted image 20260209131810.png]]
+We don't want that reflected in our new table, so we'll be sure to remove that while reading in the file.
+
+First, let's get a table created with basic attributes `stateName` and `Abbrev` (for abbreviation).
+
+![[Pasted image 20260209132230.png]]
+
+Next, let's read in the `states.csv` file. The `ENCLOSED BY` section states that we should ignore the " " that is surrounding each entry of the CSV file.
+
+![[Pasted image 20260209132417.png]]
+
+Now that we've read the data in, let's examine:
+
+![[Pasted image 20260209132607.png]]
+
+Looks like we accidentally read in the Header of the CSV file. Let's delete that row.
+
+![[Pasted image 20260209132813.png]]
+
+After deleting the header row, we can see our state names and their abbreviations have been properly read into the table, and we have finished the assignment.
 
