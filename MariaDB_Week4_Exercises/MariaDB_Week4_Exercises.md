@@ -50,6 +50,10 @@ This new database looks like an example of data stored by a university regarding
 
 Now, let's source *EmployeesDatabase.sql*:
 
+![[Pasted image 20260211154818.png]]
 
+We can see that we now have tables `departments` and `employees` in our mynewpaltz database. 
+
+That concludes the assignment.
 
 
