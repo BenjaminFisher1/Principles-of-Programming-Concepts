@@ -1,6 +1,7 @@
 This assignment is a bit shorter than the past few. Let's get started:
 
-*1. If you haven’t already done so, make sure you have both the vets table in your database.  
+### 1. Read in CSV:
+*If you haven’t already done so, make sure you have both the vets table in your database.  
 Replace your States table, if you already have it from class, with the data in the States_Territories.csv  
 file (given). This file includes Territories like GUAM, Northern Marinara Islands etc.*
 
@@ -20,3 +21,10 @@ Annoyingly, the header read in. Let's clean that up:
 ![[Pasted image 20260211143725.png]]
 
 Great! Our CSV is properly read in, and we can continue.
+
+### 2. Obtain Count of Vets From Each State, Descending:
+For this task, we need to combine a few of the things I've used individually into one query: `GROUP BY, ORDER BY` and `COUNT(*)`, as well as using `IN` for the first time.
+
+![[Pasted image 20260211145343.png]]
+
+This query grabs the state and count for any state in vets that matches an Abbreviated state in states, then groups by state and sorts the output by the count in descending order.
