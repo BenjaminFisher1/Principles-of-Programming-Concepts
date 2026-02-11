@@ -16,3 +16,7 @@ Now double checking the CSV read in properly.
 ![[Pasted image 20260211143534.png]]
 
 Annoyingly, the header read in. Let's clean that up:
+
+![[Pasted image 20260211143725.png]]
+
+Great! Our CSV is properly read in, and we can continue.
