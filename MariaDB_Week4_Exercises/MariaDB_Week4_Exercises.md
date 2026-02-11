@@ -28,3 +28,28 @@ For this task, we need to combine a few of the things I've used individually int
 ![[Pasted image 20260211145343.png]]
 
 This query grabs the state and count for any state in vets that matches an Abbreviated state in states, then groups by state and sorts the output by the count in descending order.
+
+### 3. Obtain List of States in vets But Not States:
+Pretty simple, I'll just slightly alter the previous command to contain `NOT IN` instead of `IN`.
+
+![[Pasted image 20260211150518.png]]
+
+This query shows all states/territories not contained in the states table, as well as their counts.
+
+### 4. Source .sql files:
+
+Something different now: sourcing .sql files and observing their results. First, we do *StudentExample.sql*. 
+
+![[Pasted image 20260211151013.png]]
+
+We can see the database changed, and we are no longer in `fisher`. Let's list the tables of our new database:
+
+![[Pasted image 20260211151201.png]]
+
+This new database looks like an example of data stored by a university regarding a class. 
+
+Now, let's source *EmployeesDatabase.sql*:
+
+
+
+
