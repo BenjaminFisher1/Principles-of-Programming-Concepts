@@ -50,7 +50,46 @@ Here we can see all departments, even those without employees. We also could hav
 
 *4. List all employee names and their manager’s names. List only those employees who have a manager.*
 
-TODO: WORKING ON:
-SELECT e.name, d.manager_id FROM employees e RIGHT  JOIN departments d ON e.manager_id = d.manager_id;
+Because we need to reference `name` twice, once for the employee, and once for manager, I'll use a self join.
+
+```mysql
+SELECT e.name, a.name as manager FROM employees e INNER JOIN employees a ON e.manager_id = a.id;
+```
+
+![[Pasted image 20260218152901.png]]
+
+Looks great! We can see a list of all employees who have managers, and their respective manager.
 
 *5. List employees and their department names*
+
+We'll use a left join similar to earlier here:
+
+```mysql
+SELECT e.name, d.department_name FROM employees e LEFT JOIN departments d ON e.department_id=d.id;
+```
+
+![[Pasted image 20260218150300.png]]
+
+*6. List name and salary of employee with highest salary*
+
+To find the highest salary, we'll use the `MAX` function:
+
+```mysql
+SELECT name, MAX(salary) FROM employees;
+```
+
+![[Pasted image 20260218151431.png]]
+
+We can see Alice has the highest salary, of 90000.00.
+
+*7. List name, department_name and and salary of employee with highest salary*
+
+We'll simply combine the query from 6 with a left join on department id.
+
+```mysql
+SELECT name, MAX(salary), department_name FROM employees LEFT JOIN departments ON employees.department_id=departments.id;
+```
+
+![[Pasted image 20260218151725.png]]
+
+Nice, we can see Alice makes 90000.00 and is part of the engineering department.
