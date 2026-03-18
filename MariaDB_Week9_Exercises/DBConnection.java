@@ -8,21 +8,29 @@ import java.util.ArrayList;
 
 public class DBConnection {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        String url = "jdbc:mariadb://localhost:3306/";
-        String user;
-        String password;
+        //COMMENTED OUT THE SCANNER, INSTEAD WE WILL PASS VIA COMMAND LINE ARGS:
+        //PASS IN THIS ORDER: username password dbname
+        if(args.length < 3){
+            System.err.println("give username, password, and dbname as command line arguments.");
+            return;
+        }
 
-        System.out.print("Enter your username: ");
-        user = sc.nextLine();
-        System.out.print("Enter your password: ");
-        password = sc.nextLine();
-        System.out.println("Enter db name:");
-        //append db name to url
-         url += sc.nextLine();
+
+        // Scanner sc = new Scanner(System.in);
+        String url = "jdbc:mariadb://localhost:3306/" + args[2]; //append db name to url
+        String user = args[0];
+        String password = args[1];
+
+        // System.out.print("Enter your username: ");
+        // user = sc.nextLine();
+        // System.out.print("Enter your password: ");
+        // password = sc.nextLine();
+        // System.out.println("Enter db name:");
+        // //append db name to url
+        //  url += sc.nextLine();
 
          //close as soon as we are done scanning.
-            sc.close();
+            // sc.close();
 
 
         //try to connect to db 
@@ -47,7 +55,7 @@ public class DBConnection {
                 Sales sale = new Sales(rs.getInt("order_no"), rs.getString("customer_name"), rs.getString("city"), rs.getString("name"), rs.getDouble("purchase_amt"), rs.getDouble("commission"));
                 salesList.add(sale);
             }
-            
+
             // iterate arraylist and Print all sales objects
             for(Sales sale : salesList){
                 System.out.println(sale.orderNumber + " " + sale.customerName + " " + sale.customerCity + " " + sale.salesmanName + " " + sale.amount + " " + sale.commissionAmount);

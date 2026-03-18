@@ -159,9 +159,34 @@ java -cp .:mariadb-java-client-3.5.7.jar DBConnection
 ```📦[b@ubuntu MariaDB_Week9_Exercises]$ javac DBConnection.java 
 📦[b@ubuntu MariaDB_Week9_Exercises]$ java -cp .:mariadb-java-client-3.5.7.jar DBConnection 
 Enter your username: b
-Enter your password: XXXXXXXXXXXXXX.
+Enter your password: XXXXXXXXXXXXXX
 Enter db name:
 labwork
+Connected to MariaDB!
+Grabbing Sales.
+3003 Tom Harris New York Alice Johnson 750.0 112.5
+3005 Sara Lee Boston Alice Johnson 2500.0 375.0
+3011 Sara Lee Boston Alice Johnson 2800.0 420.0
+3012 Tom Harris New York Alice Johnson 900.0 135.0
+3002 Mike Davis Los Angeles Bob Smith 350.0 42.0
+3004 Nancy Kim San Diego Bob Smith 1200.0 144.0
+3010 Nancy Kim San Diego Bob Smith 1800.0 216.0
+3001 James Wilson Chicago Carol White 150.0 27.0
+3009 James Wilson Chicago Carol White 90.0 16.2
+3008 Linda Moore Houston David Brown 620.0 62.0
+3006 Maria Garcia Phoenix Eva Green 480.0 96.0
+3007 Chris Taylor Dallas Eva Green 3100.0 620.0
+```
+
+This program grabs all sales and needed info, then stores each sale to a `sale` object, puts each `sale` object in an ArrayList, iterates the ArrayList, then prints each `sale` object. 
+
+
+
+**CORRECTION:**
+We were supposed to pass the username, password, and db name as command line args, not with a scanner. I corrected this, and got the following output:
+
+```
+📦[b@ubuntu MariaDB_Week9_Exercises]$ java -cp .:mariadb-java-client-3.5.7.jar DBConnection  b XXXXXXXXXXX labwork
 Connected to MariaDB!
 Grabbing Sales.
 3003 Tom Harris New York Alice Johnson 750.0 112.5
@@ -179,6 +204,4 @@ Grabbing Sales.
 
 ```
 
-This program grabs all sales and needed info, then stores each sale to a `sale` object, puts each `sale` object in an ArrayList, iterates the ArrayList, then prints each `sale` object. 
-
-I've uploaded the program to this directory of my github as well.
+I've uploaded the corrected program to this directory of my github as well.
