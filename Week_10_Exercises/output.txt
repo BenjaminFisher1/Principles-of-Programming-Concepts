@@ -1,0 +1,203 @@
+set of fruit:
+banana
+date
+cherry
+apple
+honeydew
+berry
+kiwi
+lemon
+fig
+grape
+elderberry
+
+fruit by first character:
+first: a
+fruits: [apple, apple]
+first: b
+fruits: [banana, berry, banana]
+first: c
+fruits: [cherry, cherry, cherry]
+first: d
+fruits: [date]
+first: e
+fruits: [elderberry]
+first: f
+fruits: [fig]
+first: g
+fruits: [grape]
+first: h
+fruits: [honeydew]
+first: k
+fruits: [kiwi]
+first: l
+fruits: [lemon]
+
+fruit by length:
+length: 3
+fruits: [fig]
+length: 4
+fruits: [kiwi, date]
+length: 5
+fruits: [berry, apple, lemon, apple, grape]
+length: 6
+fruits: [cherry, banana, cherry, cherry, banana]
+length: 8
+fruits: [honeydew]
+length: 10
+fruits: [elderberry]
+
+fruit with 'erry':
+cherry
+berry
+cherry
+cherry
+elderberry
+
+partitioned by contains 'erry':
+contains 'erry': false
+fruits: [banana, apple, kiwi, fig, date, lemon, honeydew, apple, banana, grape]
+contains 'erry': true
+fruits: [cherry, berry, cherry, cherry, elderberry]
+
+fruit with 5 or less symbols:
+berry
+apple
+kiwi
+fig
+date
+lemon
+apple
+grape
+
+Total number of symbols: 84
+
+partitioned by >=50:
+Key: false
+Values: [23, 45, 6, 44, 13, 34, 19, 45, 23, 3, 43, 21, 34, 10]
+Key: true
+Values: [87, 100, 78, 92, 56, 99, 82, 1012, 78, 90, 56, 78, 100, 67, 89]
+
+remainder: 0
+data: [56, 56, 21]
+remainder: 1
+data: [78, 92, 99, 78, 78, 43]
+remainder: 2
+data: [23, 100, 44, 23, 100]
+remainder: 3
+data: [87, 45, 45, 3, 10]
+remainder: 4
+data: [1012, 67]
+remainder: 5
+data: [82, 19, 89]
+remainder: 6
+data: [6, 13, 34, 90, 34]
+
+Sum of data: 2527
+
+unique values:
+34
+99
+3
+67
+100
+6
+10
+43
+44
+45
+13
+78
+82
+19
+1012
+21
+87
+23
+56
+89
+90
+92
+
+cubes:
+658503
+12167
+91125
+1000000
+216
+474552
+778688
+85184
+2197
+175616
+39304
+970299
+551368
+6859
+1036433728
+474552
+91125
+729000
+12167
+175616
+474552
+1000000
+27
+79507
+300763
+704969
+9261
+39304
+1000
+
+Sum of cubes: 1045371649
+
+increased by 5:
+92
+28
+50
+105
+11
+83
+97
+49
+18
+61
+39
+104
+87
+24
+1017
+83
+50
+95
+28
+61
+83
+105
+8
+48
+72
+94
+26
+39
+15
+
+even cubes:
+1000000
+216
+474552
+778688
+85184
+175616
+39304
+551368
+1036433728
+474552
+729000
+175616
+474552
+1000000
+39304
+1000
+
