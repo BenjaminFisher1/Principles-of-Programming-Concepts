@@ -80,6 +80,10 @@ class SalesPerson {
         this.commission = commission;
         this.totalSales = totalSales;
     }
+
+    public String toString(){
+        return name + " " + city + " " + commission + " " + totalSales;
+    }
 }
 
 //Sample Run:
