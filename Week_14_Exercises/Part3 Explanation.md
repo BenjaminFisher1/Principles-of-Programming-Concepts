@@ -1,1 +1,2 @@
 It appears that as n grows very large, using two threads has a significant reduction on the time it takes to run the calculation. This is because for the smaller n values, the overhead of thread management is unneeded, and wastes resources rather than make things more efficient.
+![[SampleRun.png]]
