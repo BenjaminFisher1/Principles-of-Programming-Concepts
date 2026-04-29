@@ -7,6 +7,17 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
+// 4.
+// 
+// If you have three
+//  
+// JUnit
+//  
+// test methods written in the same testing class and the first one fails its
+// 
+// assertions, will he other methods still be executed? (try it)
+
 @TestMethodOrder(OrderAnnotation.class)
 class FailTest {
 
